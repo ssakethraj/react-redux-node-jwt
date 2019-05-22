@@ -4,7 +4,8 @@
   "description": "A backend using NodeJS for a simple authentication application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel-node ./index.js"
   },
   "keywords": [
     "Login",
@@ -16,6 +17,7 @@
   "author": "Saketh",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "express": "^4.17.0",
@@ -28,6 +30,8 @@
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
